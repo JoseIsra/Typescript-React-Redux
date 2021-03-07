@@ -1,0 +1,13 @@
+.addArticle > form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addArticle input{
+    padding:1.12rem;
+    outline:none;
+    background-color: transparent;
+}
