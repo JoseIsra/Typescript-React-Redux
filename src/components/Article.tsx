@@ -3,6 +3,8 @@ import React,{ useCallback } from 'react'
 import { Dispatch } from 'redux';
 import { useDispatch } from 'react-redux';
 
+import './Article.css';
+
 type Props = {
     article:IArticle,
     removeArticle: (article:IArticle) => void
@@ -21,9 +23,12 @@ export const Article:React.FC<Props> = ({article, removeArticle}) => {
 
     return (
         <div className ="article">
-            <h6>{article.title}</h6>
-            <h1>{article.content}</h1>
+            <div className="article__content">
+            <h1>{article.title}</h1>
+            <p>{article.content}</p>
             <button onClick={()=>dispatch(deleteArticle(article))}>Delete</button>
+            </div>
+            
         </div>
     )
 }

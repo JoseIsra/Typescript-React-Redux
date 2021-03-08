@@ -33,9 +33,15 @@ export const AddArticle:React.FC = () => {
 
     return (
         <div className="addArticle">
-        <form onSubmit={handleSubmit}>
-            <input type="text" value={article.title} name="title" onChange={handleChange} />
-            <input type="text" value={article.content} name="content" onChange={handleChange}/>
+
+        <form onSubmit={handleSubmit} autoComplete="off">
+            <input type="text" value={article.title} 
+            name="title" onChange={handleChange}
+            placeholder="Titulo"
+            />
+            <input type="text" value={article.content}
+            placeholder="Contenido"
+            name="content" onChange={handleChange}/>
 
             <button type="submit">SAVE</button>
         </form>        

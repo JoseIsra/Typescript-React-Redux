@@ -1,0 +1,56 @@
+
+
+.article
+{
+    margin:1.5rem 0;
+    padding:0.75rem;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    border-radius:5px;
+    align-items: flex-start;
+    justify-content: center;
+    width:30rem;
+    background-color: lightgray;
+}
+
+
+.article__content
+{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width:100%;
+
+}
+
+
+.article__content > h1
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.article__content > p{
+    padding:8px;
+    position:relative;
+    bottom:1.8rem;
+    color:black;
+    word-break: break-all;
+}
+
+.article__content > button
+{
+    padding:10px;
+    font-size:0.88rem;
+    position:absolute;
+    color:lightgray;
+    border:none;
+    bottom:1.2rem;
+    right:1.2rem;
+    background-color: rgba(241, 33, 33, 0.972);
+    outline:none;
+    cursor:pointer;
+}

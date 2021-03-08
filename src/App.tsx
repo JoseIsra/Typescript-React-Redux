@@ -16,7 +16,7 @@ export const App:React.FC = () => {
   console.log(articles)
   return (
     <div className="app">
-      <h1>Hola como andas</h1>
+      <h1>Typescript con React y su amigo Redux</h1>
       <AddArticle />
 
       {articles.map((article)=> (

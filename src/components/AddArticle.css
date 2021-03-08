@@ -1,3 +1,5 @@
+
+
 .addArticle > form
 {
     display: flex;
@@ -7,7 +9,29 @@
 }
 
 .addArticle input{
-    padding:1.12rem;
+    padding:0.5rem;
+    margin: 0.55rem 0 ;
     outline:none;
+    font-size:1.2rem;
     background-color: transparent;
+    border-radius:20px;
+    border:3px solid #0070f3;
+}
+.addArticle > form >  button {
+    padding:0.7rem;
+    width:100%;
+    font-size:1.15rem;
+    letter-spacing: 0.7rem;
+    background-color: transparent;
+    outline:none;
+    border:2px solid black;
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+
+.addArticle > form >  button:hover
+{
+    background-color: black;
+    color:#0070f3;
+    font-weight: bolder;
 }
